@@ -11,8 +11,8 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      "/api":{
-        target: 'http://tingapi.ting.baidu.com/v1/restserver/ting',
+      "/api": {
+        target: "http://tingapi.ting.baidu.com",
         changeOrigin: true,
         pathRewrite: {
           '^/api': '/'
@@ -28,7 +28,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */

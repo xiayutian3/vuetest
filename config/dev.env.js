@@ -4,5 +4,6 @@ const prodEnv = require('./prod.env')
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
-  API_ROOT: '"开发环境地址"'
+  API_ROOT: '"/api"'
+  // API_ROOT: '"http://tingapi.ting.baidu.com"'
 })
