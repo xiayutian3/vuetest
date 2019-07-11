@@ -26,7 +26,7 @@ export default {
     try{
       let result = await ajaxService.getlist()
       if(result.status == 200){
-        console.log('result ',result)
+        // console.log('result ',result)
       }else{
         console.log('没有查找到数据')
       }
