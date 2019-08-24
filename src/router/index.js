@@ -35,5 +35,33 @@ export default new Router({
       name: 'Mapjs2',
       component: Mapjs2
     },
+    {
+      path: '/happ-wrap',
+      redirect:'/happ-wrap/happ',
+      name: 'Happ-wrap',
+      component: () => import('@/view/happ/happ-wrap.vue'),
+      children:[
+        {
+          path: 'happ',
+          name: 'happ',
+          component: () => import('@/view/happ/happ.vue'),
+        },
+        {
+          path: 'news',
+          name: 'news',
+          component: () => import('@/view/happ/news.vue')
+        },
+        {
+          path: 'detail',
+          name: 'detail',
+          component: () => import('@/view/happ/detail.vue')
+        },
+        {
+          path: 'my',
+          name: 'my',
+          component: () => import('@/view/happ/my.vue')
+        }
+      ]
+    }
   ]
 })

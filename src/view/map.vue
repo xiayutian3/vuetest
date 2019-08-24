@@ -5,7 +5,7 @@
 
 
     <div class="address_items" id="address_result" v-if="searchData.length > 0">
-      <div class="address_item" v-for="item in searchData">
+      <div class="address_item" v-for="(item,idx) in searchData" :key="idx">
         <div class="title">{{ item.name }}</div>
         <div class="description">{{ item.pname }}{{ item.cityname }}{{ item.address }}</div>
       </div>
