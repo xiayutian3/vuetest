@@ -1,6 +1,8 @@
 <template>
   <div class="detail-wrap">
     我是 detail页面
+    <button @click="handleClick">开启动画</button>
+    <div class="box" :class="{rotateAni:rotateClass}"></div>
   </div>
 </template>
 
@@ -10,7 +12,7 @@ export default {
 
   data () {
     return {
-
+        rotateClass:false
     };
   },
 
@@ -18,7 +20,11 @@ export default {
 
   mounted(){},
 
-  methods: {},
+  methods: {
+    handleClick(){
+      this.rotateClass = !this.rotateClass
+    }
+  },
 
   components: {},
 
@@ -32,4 +38,13 @@ export default {
   height: 100%;
   background: lightslategrey;
 }
+  .box{
+    width: 200px;
+    height: 200px;
+    background: lightpink;
+    transition: all 3s;
+  }
+  .rotateAni{
+    transform: rotate(360deg);
+  }
 </style>

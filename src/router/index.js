@@ -54,7 +54,7 @@ export default new Router({
         {
           path: 'detail',
           name: 'detail',
-          component: () => import('@/view/happ/detail.vue')
+          component: () => import('@/view/happ/detail.vue'),
         },
         {
           path: 'my',
