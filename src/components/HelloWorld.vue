@@ -4,14 +4,19 @@
     <chil-large @open="open"/>
     <chil-small />
     <async-data/>
+    <list/>
+    <list/>
+    <list/>
   </div>
 </template>
 
 <script>
   import vm from "@/event.js";
+  import List from '@/components/List'
   import ChilLarge from "./ChilLarge"
   import ChilSmall from "./ChilSmall"
   import AsyncData from "./AsyncData"
+
   export default {
     name: 'HelloWorld',
     created(){
@@ -27,7 +32,8 @@
     components:{
       ChilLarge,
       ChilSmall,
-      AsyncData
+      AsyncData,
+      List
     },
     methods:{
       open(msg){
