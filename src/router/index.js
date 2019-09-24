@@ -62,6 +62,16 @@ export default new Router({
           component: () => import('@/view/happ/my.vue')
         }
       ]
-    }
+    },
+    {
+      path: '/reset',
+      name: 'reset',
+      component: () => import('@/view/reset.vue'),
+    },
+    {
+      path: '/vuex',
+      name: 'vuex',
+      component: () => import('@/view/vuex.vue'),
+    },
   ]
 })

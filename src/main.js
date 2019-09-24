@@ -3,11 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'
 import VueAMap from 'vue-amap'
 import './mycss/css1.css'
 import './myjs/js1'
+import store from './store'
 
-
+Vue.use(iView);
 Vue.use(VueAMap);
 VueAMap.initAMapApiLoader({
   key: '8cbaff2a3de97b42ee1382fdc7918965',
@@ -22,6 +25,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
