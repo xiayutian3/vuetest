@@ -73,5 +73,10 @@ export default new Router({
       name: 'vuex',
       component: () => import('@/view/vuex.vue'),
     },
+    {
+      path: '/less',
+      name: 'less',
+      component: () => import('@/view/less.vue'),
+    }
   ]
 })
