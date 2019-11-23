@@ -71,12 +71,17 @@ export default new Router({
     {
       path: '/vuex',
       name: 'vuex',
-      component: () => import('@/view/vuex.vue'),
+      component: () => import('@/view/vuex-two-way.vue'),
     },
     {
       path: '/less',
       name: 'less',
       component: () => import('@/view/less.vue'),
+    },
+    {
+      path: '/style',
+      name: 'style',
+      component: () => import('@/view/style.vue'),
     }
   ]
 })
