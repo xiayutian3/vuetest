@@ -82,6 +82,11 @@ export default new Router({
       path: '/style',
       name: 'style',
       component: () => import('@/view/style.vue'),
+    },
+    {
+      path: '/variable',
+      name: 'variable',
+      component: () => import('@/view/variable.vue'),
     }
   ]
 })
