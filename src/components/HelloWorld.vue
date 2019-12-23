@@ -7,7 +7,8 @@
         就会报出，应为v-if写在组件根源最外层，钩子函数韩式会执行的，蔼然没有Dom节点显示出来）
         -->
 <!--    v-if="false"如果写在组件上或者组件里的根元素  两者的相同点 是组件标签都没有渲染-->
-    <none v-if="false"></none>
+<!--    <none v-if="false"></none>-->
+    <none></none>
 
     <h1>我是父组件</h1>
     <chil-large @open="open"/>
