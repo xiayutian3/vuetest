@@ -74,6 +74,11 @@ export default new Router({
       component: () => import('@/view/vuex-two-way.vue'),
     },
     {
+      path: '/sync',
+      name: 'sync',
+      component: () => import('@/view/sync.vue'),
+    },
+    {
       path: '/less',
       name: 'less',
       component: () => import('@/view/less.vue'),
