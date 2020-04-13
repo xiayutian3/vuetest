@@ -10,6 +10,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
+//自己的skeleton插件
+const MySkeleton = require('./mySkeleton')
+
+
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
@@ -57,6 +61,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       template: 'index.html',
       inject: true
     }),
+    // 插入自己定义的插件（skeleton）
+    new MySkeleton({
+      test:'xxx'
+    }),
+
     // copy custom static assets
     new CopyWebpackPlugin([
       {
