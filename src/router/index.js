@@ -97,6 +97,11 @@ export default new Router({
       path: '/out-variable',
       name: 'out-variable',
       component: () => import('@/view/out-variable.vue'),
+    },
+    {
+      path: '/sha1',
+      name: 'sha1',
+      component: () => import('@/view/sha1.vue'),
     }
   ]
 })
